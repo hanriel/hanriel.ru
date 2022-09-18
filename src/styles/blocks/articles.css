@@ -1,0 +1,102 @@
+/* Articles */
+
+.articles {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.articles__item {
+    margin: 10px 0;
+    padding: 14px 0 16px;
+    background-color: var(--color-grey-lighter);
+    border-radius: 14px;
+}
+
+.articles__item:last-of-type {
+    border-bottom: 1px solid var(--color-grey-lighter);
+}
+
+@media (min-width: 1024px) {
+    .articles__item {
+        min-height: 107px;
+        padding: 16px 0;
+    }
+}
+
+/* Main */
+
+@media (min-width: 800px) {
+    .articles--main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: min-content;
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+
+    .articles__item--main {
+        margin-top: 1px;
+        margin-left: 1px;
+        padding: 16px 40px 32px 24px;
+        border: none;
+        box-shadow: 0 0 0 1px var(--color-grey-lighter);
+    }
+
+    .articles__item--main:last-of-type {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 1600px) {
+    .articles--main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Articles */
+
+.articles__item--articles,
+.articles__item--articles:last-of-type {
+    border-color: var(--color-grey-lighter);
+}
+
+/* Related */
+
+@media (min-width: 800px) {
+    .articles--related {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .articles__item--related {
+        margin-top: 1px;
+        margin-left: 1px;
+        padding: 16px 32px 32px 24px;
+        border: none;
+        box-shadow: 0 0 0 1px var(--color-grey-lighter);
+    }
+
+    .articles__item--related:last-of-type {
+        border-bottom: none;
+    }
+}
+
+/* Featured */
+
+.articles__item--featured {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    background-color: var(--color-grey-dark);
+    border-top: none;
+}
+
+@media (min-width: 800px) {
+    .articles__item--featured {
+        z-index: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        box-shadow: 0 0 0 1px var(--color-grey-dark);
+    }
+}

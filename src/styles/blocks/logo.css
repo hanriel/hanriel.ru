@@ -1,0 +1,31 @@
+/* Link  */
+
+.logo__link {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+/* Image */
+
+.logo__image {
+    width: 136px;
+    height: 44px;
+}
+
+@media (min-width: 736px) {
+    .logo__image {
+        grid-row: span 2;
+    }
+
+    .logo--index .logo__image {
+        width: 164px;
+        height: 53px;
+    }
+}
+
+@media (min-width: 1008px) {
+    .logo--index .logo__image {
+        width: 233px;
+        height: 75px;
+    }
+}

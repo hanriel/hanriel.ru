@@ -1,0 +1,24 @@
+{% set menu = [{
+    title: 'Статьи',
+    url: '/articles/'
+},{
+    title: 'Категории',
+    url: '/articles/tags/'
+},{
+    title: 'О проекте'
+}] %}
+
+<ul class="menu__list" id="menu__list">
+    {% for item in menu %}
+        {% if item.url and item.url == page.url %}
+            {% set currentPage = true %}
+        {% else %}
+            {% set currentPage = false %}
+        {% endif %}
+        <li class="menu__item">
+            <a class="menu__link{% if not item.url %} menu__link--inactive{% endif %}{% if currentPage %} menu__link--current{% endif %}"{% if item.url and not currentPage %} href="{{ item.url }}"{% endif %}>
+                {{ item.title }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

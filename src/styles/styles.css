@@ -1,0 +1,60 @@
+/* Fonts */
+
+@import 'fonts.css';
+
+/* Blocks */
+
+@import 'blocks/box-sizing.css';
+@import 'blocks/visually-hidden.css';
+@import 'blocks/page.css';
+@import 'blocks/header.css';
+@import 'blocks/logo.css';
+@import 'blocks/menu.css';
+@import 'blocks/articles.css';
+@import 'blocks/archive.css';
+@import 'blocks/notice.css';
+@import 'blocks/main.css';
+@import 'blocks/content.css';
+@import 'blocks/media.css';
+@import 'blocks/links.css';
+@import 'blocks/footer.css';
+@import 'blocks/article.css';
+@import 'blocks/creators.css';
+@import 'blocks/blob.css';
+@import 'blocks/related-articles.css';
+@import 'blocks/article-card.css';
+@import 'blocks/conference-link.css';
+@import 'blocks/video.css';
+@import 'blocks/tooltip.css';
+@import 'blocks/not-found.css';
+
+/* Globals */
+
+:root {
+    --color-grey-lightest: #e9eaeb;
+    --color-grey-lighter: #d9d9d9;
+    --color-grey-light: #828282;
+    --color-grey-medium: #696969;
+    --color-grey-dark: #242424;
+    --color-grey-darker: #333333;
+
+    --color-blue-lightest: #ffcb82;
+    --color-blue-lightest-0a: #ffcb8200;
+    --color-blue-light: #ff9900;
+    --color-blue-medium: #e88b00;
+    --color-blue-darker: #d37e00;
+
+    --color-green-light: #ffcb82;
+    --color-green-darker: #ffaa2c;
+    --color-green-darker-50a: #ffaa2c80;
+
+    --color-teal: #d37e00;
+    --color-lightteal: #e88b00;
+    --color-turquoise: #ff9900;
+    --color-moss: #ffa217;
+    --color-grass: #ffaa2c;
+
+    --color-special-neutral: #ffaa2c;
+    --color-special-dark-10a: #d37e001a;
+    --color-special-dark: #e88b00;
+}

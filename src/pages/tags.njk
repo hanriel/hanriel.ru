@@ -1,0 +1,19 @@
+---
+title: Теги
+layout: page.njk
+permalink: /articles/tags/
+---
+
+<main class="main">
+    <div class="archive">
+        <h1 class="archive__title">Категории</h1>
+    </div>
+
+    <p class="archive__tags">
+        {% for tag in collections.tagList %}
+            <a class="archive__tags-link" href="/articles/tags/{{ tag | slug }}">
+                {{- tag -}}
+            </a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+</main>

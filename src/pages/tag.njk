@@ -1,0 +1,40 @@
+---
+pagination:
+    data: collections.tagList
+    size: 1
+    alias: tag
+renderData:
+    title: Статьи с тегом «{{ tag }}»
+layout: page.njk
+permalink: /articles/tags/{{ tag | slug }}/
+---
+
+<main class="main">
+    <div class="archive">
+        <h1 class="archive__title">
+            Теги
+        </h1>
+    </div>
+
+    <p class="archive__tags">
+        {% for tags in collections.tagList %}
+            <a class="archive__tags-link"
+            {% if tag != tags %}
+                href="/articles/tags/{{ tags | slug }}"
+            {% endif %}>
+                {{- tags -}}
+            </a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+
+    {% set tagList = collections[tag] %}
+    {% set articleType %}{{ '--articles' }}{% endset %}
+
+    <ul class="articles articles{{ articleType }}">
+        {%- for article in tagList | reverse -%}
+            <li class="articles__item articles__item{{ articleType }}">
+                {% include 'article-card.njk' %}
+            </li>
+        {%- endfor -%}
+    </ul>
+</main>
