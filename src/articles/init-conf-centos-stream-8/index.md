@@ -6,9 +6,6 @@ tags:
     - centos-stream-8
     - linux
     - servsers
-hero:
-    src: images/cover.png
-    cover: true
 featured: true
 ---
 
