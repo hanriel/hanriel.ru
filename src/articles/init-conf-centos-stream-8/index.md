@@ -5,7 +5,7 @@ author: danil-fedoseev
 tags:
     - centos-stream-8
     - linux
-    - servsers
+    - servers
 ---
 
 ## Создание аккаунта пользователя
