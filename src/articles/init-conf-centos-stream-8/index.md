@@ -1,12 +1,11 @@
 ---
 title: 'Базовая настройка Centos Stream 8'
-date: 2022-09-19
+date: 2022-09-18
 author: danil-fedoseev
 tags:
     - centos-stream-8
     - linux
     - servsers
-featured: true
 ---
 
 ## Создание аккаунта пользователя
