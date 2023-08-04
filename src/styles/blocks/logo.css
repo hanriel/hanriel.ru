@@ -2,8 +2,8 @@
 
 .logo__link {
     display: grid;
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
 /* Image */
@@ -22,9 +22,8 @@
 }
 
 .logo__description {
-    font-size: 16px;
     color: #878787;
-    line-height: 26px;
+    font-size: 16px;
 }
 
 @media (min-width: 736px) {

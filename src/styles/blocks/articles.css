@@ -23,7 +23,7 @@
 /* Main */
 
 @media (min-width: 800px) {
-    .articles--main { }
+    /* .articles--main {} */
 
     .articles__item--main {
         margin-top: 1px;
@@ -41,11 +41,7 @@
     }
 }
 
-@media (min-width: 1600px) {
-    .articles--main {
-
-    }
-}
+/* @media (min-width: 1600px) { .articles--main {} } */
 
 /* Articles */
 

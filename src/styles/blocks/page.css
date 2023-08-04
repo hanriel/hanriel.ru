@@ -1,9 +1,6 @@
 /* Page */
 
-.page,
-.page__body {
-
-}
+/* .page, .page__body {} */
 
 .page {
     overflow-y: scroll;
