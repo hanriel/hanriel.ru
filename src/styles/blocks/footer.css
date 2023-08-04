@@ -1,12 +1,7 @@
 /* Footer */
 
 .footer {
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
     padding: 16px 16px 24px;
-    color: var(--color-grey-dark);
 }
 
 /* Links */

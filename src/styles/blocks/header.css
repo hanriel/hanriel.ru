@@ -2,30 +2,7 @@
 
 .header {
     position: relative;
-    display: grid;
     padding: 16px;
-    border-bottom: 1px solid var(--color-grey-lighter);
-}
-
-@media (min-width: 736px) {
-    .header {
-        grid-template-columns: max-content max-content;
-        justify-content: space-between;
-        /*padding-right: 24px;*/
-        padding-bottom: 16px;
-        /*padding-left: 24px;*/
-        border-bottom: none;
-    }
-
-    .header--index {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (min-width: 960px) {
-    .header {
-        /*width: calc(33.3% - 20px);*/
-    }
 }
 
 /* Logo */
@@ -39,10 +16,6 @@
 @media (min-width: 736px) {
     .header__logo {
         align-self: start;
-    }
-
-    .header--index .header__logo {
-
     }
 }
 

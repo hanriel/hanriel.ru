@@ -45,15 +45,15 @@
     --color-blue-medium: #00e849;
     --color-blue-darker: #00d331;
 
-    --color-green-light: #ffcb82;
-    --color-green-darker: #ffaa2c;
-    --color-green-darker-50a: #ffaa2c80;
+    --color-green-light: #82ff9b;
+    --color-green-darker: #2cff4f;
+    --color-green-darker-50a: rgba(44, 255, 93, 0.5);
 
-    --color-teal: #d37e00;
-    --color-lightteal: #e88b00;
-    --color-turquoise: #ff9900;
-    --color-moss: #ffa217;
-    --color-grass: #ffaa2c;
+    --color-teal: #00d382;
+    --color-lightteal: #00e897;
+    --color-turquoise: #00ff8c;
+    --color-moss: #2bb198;
+    --color-grass: #2cffae;
 
     --color-special-neutral: #2cff3e;
     --color-special-dark-10a: rgba(0, 211, 18, 0.1);

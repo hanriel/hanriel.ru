@@ -2,10 +2,11 @@
 
 .page,
 .page__body {
-    height: 100%;
+
 }
 
 .page {
+    overflow-y: scroll;
     color: black;
     font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
     background-color: white;

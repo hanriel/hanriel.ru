@@ -1,7 +1,9 @@
 ---
 title: Доступный компонент «из коробки»
 date: 2021-11-18
-author: damir-gibadullin
+author:
+    - damir-gibadullin
+    - danil-fedoseev
 editors:
     - danil-fedoseev
 tags:

@@ -13,6 +13,12 @@
     margin-top: 16px;
 }
 
+@media (min-width: 960px) {
+    .main {
+        width: calc(66.7% + 20px);
+    }
+}
+
 @media (min-width: 1024px) {
     .main {
         padding: 32px 0 16px;

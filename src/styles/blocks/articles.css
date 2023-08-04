@@ -65,7 +65,6 @@
     .articles__item--related {
         margin-top: 1px;
         margin-left: 1px;
-        padding: 16px 32px 32px 24px;
         border: none;
         box-shadow: 0 0 0 1px var(--color-grey-lighter);
     }

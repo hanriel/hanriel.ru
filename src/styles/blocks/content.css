@@ -2,7 +2,6 @@
 
 .content {
     max-width: 700px;
-    margin: 0 auto;
     color: black;
     font-size: 16px;
     line-height: 1.7;
@@ -12,7 +11,7 @@
     .content {
         max-width: none;
         margin: 0;
-        font-size: 21px;
+        font-size: 18px;
     }
 }
 
@@ -185,7 +184,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    color: var(--color-grey-lighter);
+    color: var(--color-grey-medium);
     font-size: 16px;
     font-stretch: expanded;
     counter-increment: list;
@@ -313,8 +312,6 @@
 
 @media (min-width: 1240px) {
     .content pre {
-        margin-top: 60px;
-        margin-bottom: 60px;
         padding-left: 36px;
     }
 }
@@ -387,20 +384,6 @@
     margin-top: 32px;
     margin-bottom: 32px;
     border: 0;
-}
-
-/* Letter */
-
-.content > p:first-child::first-letter {
-    float: left;
-    margin-top: 0.13em;
-    margin-left: -5px;
-    padding-right: 15px;
-    color: var(--color-grey-medium);
-    font-weight: normal;
-    font-size: 3.5em;
-    font-stretch: expanded;
-    line-height: 0.65;
 }
 
 /* Tables */

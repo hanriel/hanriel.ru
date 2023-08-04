@@ -21,14 +21,14 @@
 }
 
 @media (min-width: 630px) {
-    .archive__title {
+    .not-found__title {
         margin: 20px 0 20px;
         font-size: 32px;
     }
 }
 
 @media (min-width: 1024px) {
-    .archive__title {
+    .not-found__title {
         margin: 53px 0 113px;
         font-size: 48px;
     }
