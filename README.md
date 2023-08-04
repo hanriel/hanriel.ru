@@ -1,7 +1,6 @@
 # Hanriel - IT-технологии
 [![](https://github.com/hanriel/hanriel.ru/workflows/EditorConfig/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3AEditorConfig)
 [![](https://github.com/hanriel/hanriel.ru/workflows/Markdown/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3AMarkdown)
-[![](https://github.com/hanriel/hanriel.ru/workflows/HTML/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3AHTML)
 [![](https://github.com/hanriel/hanriel.ru/workflows/Stylelint/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3AStylelint)
 [![](https://github.com/hanriel/hanriel.ru/workflows/ESLint/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3AESLint)
 [![](https://github.com/hanriel/hanriel.ru/workflows/Deploy/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3ADeploy)
