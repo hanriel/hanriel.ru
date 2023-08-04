@@ -11,7 +11,6 @@
     "eslint": "eslint src/**/*.js",
     "markdown": "remark 'src/articles/**/*.md' --quiet",
     "typograph": "remark",
-    "html": "node-w3c-validator -i ./dist/**/*.html --exclude ./dist/**/demos/** -f lint -evH",
     "test": "npm run editorconfig && npm run stylelint && npm run markdown && npm run eslint",
     "build": "rm -rf dist && eleventy && gulp build",
     "deploy": "cd dist && rsync --archive --compress --delete . root@hanriel.ru:/var/www/hanriel.ru/html/"
