@@ -7,6 +7,7 @@
 @import 'blocks/box-sizing.css';
 @import 'blocks/visually-hidden.css';
 @import 'blocks/page.css';
+@import 'blocks/aside.css';
 @import 'blocks/header.css';
 @import 'blocks/logo.css';
 @import 'blocks/menu.css';
@@ -38,11 +39,11 @@
     --color-grey-dark: #242424;
     --color-grey-darker: #333333;
 
-    --color-blue-lightest: #ffcb82;
-    --color-blue-lightest-0a: #ffcb8200;
-    --color-blue-light: #ff9900;
-    --color-blue-medium: #e88b00;
-    --color-blue-darker: #d37e00;
+    --color-blue-lightest: #82ff84;
+    --color-blue-lightest-0a: rgba(147, 255, 130, 0);
+    --color-blue-light: #00ff51;
+    --color-blue-medium: #00e849;
+    --color-blue-darker: #00d331;
 
     --color-green-light: #ffcb82;
     --color-green-darker: #ffaa2c;
@@ -54,7 +55,7 @@
     --color-moss: #ffa217;
     --color-grass: #ffaa2c;
 
-    --color-special-neutral: #ffaa2c;
-    --color-special-dark-10a: #d37e001a;
-    --color-special-dark: #e88b00;
+    --color-special-neutral: #2cff3e;
+    --color-special-dark-10a: rgba(0, 211, 18, 0.1);
+    --color-special-dark: #00e836;
 }

@@ -2,30 +2,44 @@
 
 .logo__link {
     display: grid;
-    grid-template-columns: min-content 1fr;
 }
 
 /* Image */
 
 .logo__image {
-    width: 136px;
-    height: 44px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.logo__author {
+    margin-top: 13px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.logo__description {
+    font-size: 16px;
+    color: #878787;
+    line-height: 26px;
 }
 
 @media (min-width: 736px) {
     .logo__image {
-        grid-row: span 2;
+        object-fit: cover;
+        border-radius: 40px;
     }
 
     .logo--index .logo__image {
-        width: 164px;
-        height: 53px;
+        width: 80px;
+        height: 80px;
     }
 }
 
 @media (min-width: 1008px) {
     .logo--index .logo__image {
-        width: 233px;
+        width: 75px;
         height: 75px;
     }
 }

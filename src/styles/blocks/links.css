@@ -28,18 +28,6 @@
     margin: 0;
 }
 
-@media (min-width: 568px) {
-    .links__list {
-        flex: 0 0 320px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .links__list {
-        flex: 0 0 490px;
-    }
-}
-
 .links__title {
     margin: 0 0 15px 0;
     font-weight: bold;
@@ -58,15 +46,6 @@
     .links__title {
         font-size: 24px;
     }
-}
-
-.links__section {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 9px 0;
-    font-size: 16px;
-    font-family: 'Dewi';
 }
 
 @media (min-width: 1024px) {
@@ -97,39 +76,37 @@
 
 .links__description {
     display: flex;
-    flex: 0 0 172px;
     margin: 0 5px 0 0;
     text-align: left;
 }
 
 @media (min-width: 1024px) {
     .links__description {
-        flex: 0 0 252px;
         margin-right: 15px;
     }
 }
 
 .links__link {
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 @media (min-width: 1024px) {
     .links__link {
-        margin-right: 15px;
+        margin-right: 8px;
     }
 }
 
 .links__link::before {
     content: '';
     display: inline-block;
-    width: 33px;
-    height: 33px;
+    width: 24px;
+    height: 24px;
 }
 
 @media (min-width: 1024px) {
     .links__link::before {
-        width: 48px;
-        height: 48px;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -139,22 +116,10 @@
     background-image: url('/images/social/vk.svg');
 }
 
-.links__link--facebook::before {
-    background-image: url('/images/social/facebook.svg');
-}
-
-.links__link--twitter::before {
-    background-image: url('/images/social/twitter.svg');
-}
-
 .links__link--telegram::before {
     background-image: url('/images/social/telegram.svg');
 }
 
 .links__link--github::before {
     background-image: url('/images/social/github.svg');
-}
-
-.links__link--youtube::before {
-    background-image: url('/images/social/youtube.svg');
 }

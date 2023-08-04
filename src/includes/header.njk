@@ -2,36 +2,27 @@
     {% set path = '/../../' %}
     {% set mainLinkPath = 'href="/"' %}
 {% endif %}
-{% if page.url == '/' %}
-    {% set headerMod = 'header--index' %}
-    {% set menuMod = 'menu--index' %}
-    {% set logoMod = 'logo--index' %}
-{% endif %}
+{% set headerMod = 'header--index' %}
+{% set menuMod = 'menu--index' %}
+{% set logoMod = 'logo--index' %}
 
-<header class="header {{ headerMod }}">
-    <div class="header__logo logo {{ logoMod }}">
-        <a class="logo__link"{{ mainLinkPath | safe }}>
-            <img class="logo__image"
-                src="{{ path }}images/logo.svg"
-                width="233" height="75"
-                alt="Логотип Hanriel">
-        </a>
-    </div>
-    <nav class="header__menu menu {{ menuMod }}">
-        <button class="menu__button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="menu__list"
-            aria-label="Открыть меню">
-            <svg class="menu__icon" aria-hidden="true" width="32" height="32">
-                <use class="menu__icon-menu"
-                    href="{{ path }}images/sprite.svg#menu">
-                </use>
-                <use class="menu__icon-cross"
-                    href="{{ path }}images/sprite.svg#cross">
-                </use>
-            </svg>
-        </button>
-        {% include 'menu.njk' %}
-    </nav>
-</header>
+<aside class="aside">
+    <header class="header {{ headerMod }}">
+        <div class="header__logo logo {{ logoMod }}">
+            <a class="logo__link"{{ mainLinkPath | safe }}>
+                <img class="logo__image"
+                    src="{{ path }}images/hanriel.jpg"
+                    width="75" height="75"
+                    alt="Логотип Hanriel">
+                <span class="logo__author">Fedoseev Danil</span>
+            </a>
+        </div>
+        <p class="logo__description text-muted">Преподаватель, системный администратор, разработчик, одним словом IT-специалист из России. </p>
+        <nav class="header__menu menu {{ menuMod }}">
+            {% include 'menu.njk' %}
+        </nav>
+    </header>
+
+    {% include 'footer.njk' %}
+
+</aside>

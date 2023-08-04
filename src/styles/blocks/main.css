@@ -1,7 +1,7 @@
 /* Main */
 
 .main {
-    /* padding: 16px 8px 37px; */
+    margin-right: 0;
     background-color: white;
 }
 
@@ -9,29 +9,16 @@
     margin-bottom: 30px;
 }
 
-@media (min-width: 800px) {
-    .main__section {
-        padding-right: 24px;
-        padding-left: 24px;
-    }
-}
-
-.main__conference-link {
-    margin-top: 40px;
+.main__section {
+    margin-top: 16px;
 }
 
 @media (min-width: 1024px) {
     .main {
-        padding: 2px 64px;
+        padding: 32px 0 16px;
     }
 
     .main__content {
         margin-bottom: 40px;
-    }
-}
-
-@media (min-width: 1250px) {
-    .main__conference-link {
-        margin-top: 60px;
     }
 }

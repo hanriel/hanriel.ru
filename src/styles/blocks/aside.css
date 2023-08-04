@@ -1,0 +1,12 @@
+.aside {
+    position: sticky;
+    top: 0;
+    padding: 32px 0 16px;
+}
+
+@media (min-width: 960px) {
+    .aside {
+        width: calc(33.3% - 20px);
+        flex-shrink: 0;
+    }
+}
