@@ -38,7 +38,7 @@
     "markdown-it-multimd-table": "^4.1.1",
     "node-w3c-validator": "^2.0.1",
     "node-xml-stream": "^1.0.2",
-    "postcss": "^8.3.8",
+    "postcss": "^8.4.31",
     "postcss-color-hex-alpha": "^8.0.2",
     "postcss-csso": "^6.0.0",
     "postcss-import": "^14.0.2",
