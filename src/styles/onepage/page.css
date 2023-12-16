@@ -1,0 +1,24 @@
+/* Page */
+
+/* .page, .page__body {} */
+
+.page {
+    overflow-y: scroll;
+    color: black;
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.page__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+@media (min-width: 736px)  {
+    .page__body {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,150 @@
+/* Links */
+
+.links {
+    margin-top: -1px;
+    padding: 16px 16px 24px;
+    background-color: var(--color-grey-lightest);
+}
+
+@media (min-width: 568px) {
+    .links {
+        display: flex;
+    }
+}
+
+@media (min-width: 630px) {
+    .links {
+        padding: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .links {
+        padding: 30px 48px;
+    }
+}
+
+.links__list {
+    margin: 0;
+}
+
+.links__title {
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    font-size: 18px;
+    font-stretch: expanded;
+    text-transform: uppercase;
+}
+
+@media (min-width: 568px) {
+    .links__title {
+        flex: 1 1 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .links__title {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .links__section {
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .links__section:first-child {
+        padding-top: 0;
+    }
+}
+
+.links__section:not(:last-child) {
+    border-bottom: 1px solid var(--color-grey-lighter);
+}
+
+.links__definition {
+    flex: 1 1 auto;
+}
+
+@media (min-width: 1024px) {
+    .links__definition {
+        flex: 1 1 auto;
+    }
+}
+
+.links__description {
+    display: flex;
+    margin: 0 5px 0 0;
+    text-align: left;
+}
+
+@media (min-width: 1024px) {
+    .links__description {
+        margin-right: 15px;
+    }
+}
+
+.links__link {
+    margin-right: 8px;
+}
+
+@media (min-width: 1024px) {
+    .links__link {
+        margin-right: 8px;
+    }
+}
+
+.links__link::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 1024px) {
+    .links__link::before {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Links Icons */
+
+.links__link--vk::before {
+    background-image: url('/images/social/vk.svg');
+}
+
+.links__link--telegram::before {
+    background-image: url('/images/social/telegram.svg');
+}
+
+.links__link--github::before {
+    background-image: url('/images/social/github.svg');
+}
+
+
+.link__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    /* border-bottom: 1px solid; */
+}
+
+.link__icon {
+    width: 2rem;
+    height: 2rem;
+    margin: 8px
+}
+
+.link__href {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.link__item:hover {
+    background-color: blanchedalmond;
+}
