@@ -1,4 +1,4 @@
-{% if article.data.featured and page.url == '/' %}
+{% if article.data.featured and (page.url == '/' or page.url == '/me/')  %}
     {% set featured = true %}
     {% set featuredClass %}{{ '--featured' }}{% endset %}
 {% endif %}

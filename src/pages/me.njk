@@ -29,47 +29,51 @@ permalink: /me/index.html
     title: 'Steam',
     url: 'https://steamcommunity.com/id/Hanriel59/',
     background: '#1B2838 '
-},{
+}] %}
+
+{#
+ === Аахахахаха, не найдетесь ===
+{
     icon: '/images/onlyfans-white.svg',
     title: 'Onlyfans',
     url: 'https://pmkedu.pro/staff/fedoseev_da',
     background: '#00AFF0'
-}] %}
+}
+ === *** ===
+#}
+
+{% if page.url != '/' %}
+    {% set path = '/../../' %}
+    {% set mainLinkPath = 'href="/"' %}
+{% endif %}
+{% set headerMod = 'header--index' %}
+{% set menuMod = 'menu--index' %}
+{% set logoMod = 'logo--index' %}
+
+<header class="header {{ headerMod }}">
+    <div class="header__logo logo {{ logoMod }}">
+        <a class="logo__link"{{ mainLinkPath | safe }}>
+            <img class="logo__image"
+                src="{{ path }}images/hanriel.jpg"
+                width="75" height="75"
+                alt="Логотип Hanriel">
+            <span class="logo__author">Fedoseev Danil</span>
+        </a>
+    </div>
+    <p class="logo__description text-muted">Преподаватель, системный администратор, разработчик, одним словом IT-специалист из России. </p>
+
+    <ul class="articles articles{{ articleType }}">
+        {%- for item in links -%}
+        <a class="link__href" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+            <li class="link__item" style="background: {{ item.background }}">
+                <img class="link__icon" src={{ item.icon }}><span>{{ item.title }}</span>
+            </li>
+        </a>
+        {%- endfor -%}
+    </ul>
+</header>
 
 <main class="main">
-
-    {% if page.url != '/' %}
-        {% set path = '/../../' %}
-        {% set mainLinkPath = 'href="/"' %}
-    {% endif %}
-    {% set headerMod = 'header--index' %}
-    {% set menuMod = 'menu--index' %}
-    {% set logoMod = 'logo--index' %}
-
-    <aside class="aside">
-        <header class="header {{ headerMod }}">
-            <div class="header__logo logo {{ logoMod }}">
-                <a class="logo__link"{{ mainLinkPath | safe }}>
-                    <img class="logo__image"
-                        src="{{ path }}images/hanriel.jpg"
-                        width="75" height="75"
-                        alt="Логотип Hanriel">
-                    <span class="logo__author">Fedoseev Danil</span>
-                </a>
-            </div>
-            <p class="logo__description text-muted">Преподаватель, системный администратор, разработчик, одним словом IT-специалист из России. </p>
-
-            <ul class="articles articles{{ articleType }}">
-                {%- for item in links -%}
-                <a class="link__href" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
-                    <li class="link__item" style="background: {{ item.background }}">
-                        <img class="link__icon" src={{ item.icon }}><span>{{ item.title }}</span>
-                    </li>
-                </a>
-                {%- endfor -%}
-            </ul>
-        </header>
-    </aside>
 
     <div class="visually-hidden">
         <h1>Hanriel</h1>
@@ -77,6 +81,18 @@ permalink: /me/index.html
     </div>
 
     <section class="main__section">
+        <ul class="articles articles{{ articleType }}">
+            {%- for article in indexArticles -%}
+                <li class="
+                    articles__item
+                    articles__item{{ articleType }}
+                    {% if article.data.featured == true %}
+                        articles__item--featured
+                    {% endif %}">
+                    {% include 'article-card.njk' %}
+                </li>
+            {%- endfor -%}
+        </ul>
         <p class="notice">
             <a class="notice__link" href="/articles/">Cтатьи</a>
         </h3>
