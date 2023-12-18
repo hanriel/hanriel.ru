@@ -93,7 +93,7 @@ gulp.task('cache', gulp.series(
 gulp.task('clean', () => {
     return del([
         'dist/styles/**/*',
-        '!dist/styles/{styles,print}-*.css',
+        '!dist/styles/{styles,print,onepage}-*.css',
         'dist/scripts/**/*',
         'dist/rev.json',
     ]);
