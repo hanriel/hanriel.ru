@@ -15,7 +15,7 @@ const terser = require('gulp-terser');
 // Styles
 
 gulp.task('styles', () => {
-    return gulp.src('dist/styles/{styles,print}.css')
+    return gulp.src('dist/styles/{styles,print,onepage}.css')
         .pipe(postcss([
             require('postcss-import'),
             require('postcss-color-hex-alpha'),

@@ -13,8 +13,7 @@
     "markdown": "remark 'src/articles/**/*.md' --quiet",
     "typograph": "remark",
     "test": "npm run editorconfig && npm run stylelint && npm run markdown && npm run eslint",
-    "build": "rm -rf dist && eleventy && gulp build",
-    "deploy": "cd dist && rsync --archive --compress --delete . root@hanriel.ru:/var/www/hanriel.ru/html/"
+    "build": "rm -rf dist && eleventy && gulp build"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
