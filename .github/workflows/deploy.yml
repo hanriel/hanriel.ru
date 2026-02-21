@@ -27,7 +27,7 @@ jobs:
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@7.0.1
         with:
-          switches: -avzr --delete   # флаги rsync: архив, сжатие, рекурсивно, удалять лишнее
+          switches: -avzrO --delete   # флаги rsync: архив, сжатие, рекурсивно, удалять лишнее
           path: ./                   # что копируем (текущая папка)
           remote_path: ${{ secrets.STAGE_TARGET_DIR }}
           remote_host: ${{ secrets.STAGE_SERVER_IP }}
@@ -44,7 +44,5 @@ jobs:
           port: ${{ secrets.STAGE_SERVER_PORT }}
           script: |
             cd ${{ secrets.TARGET_DIR }}
-            npm ci --production   # устанавливаем только production-зависимости
-            pm2 restart hanriel.ru
-            # или если запускаете через systemd:
-            # sudo systemctl restart hanriel.ru
+            npm ci --production
+            sudo systemctl restart hanriel-ru
