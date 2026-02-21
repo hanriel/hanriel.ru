@@ -25,21 +25,15 @@ jobs:
 
       # ---- Далее идёт деплой на сервер через SSH ----
       - name: Deploy via rsync
-        uses: burnett01/rsync-deployments@7.0.1
+        uses: burnett01/rsync-deployments@8.0.4
         with:
-          switches: -avzr --delete --no-times   # флаги rsync: архив, сжатие, рекурсивно, удалять лишнее, без передачи времени
-          path: ./                   # что копируем (текущая папка)
+          switches: -avzr --delete --no-times --exclude='.git/' --exclude='node_modules/' --exclude='.env' --exclude='.github/' --exclude='README.md'
+          path: ./
           remote_path: ${{ secrets.STAGE_TARGET_DIR }}
           remote_host: ${{ secrets.STAGE_SERVER_IP }}
           remote_user: ${{ secrets.STAGE_SERVER_USER }}
           remote_key: ${{ secrets.STAGE_SERVER_KEY }}
           remote_port: ${{ secrets.STAGE_SERVER_PORT }}
-          exclude: |                   # исключаем из копирования для ускорения
-            node_modules
-            .git
-            .env
-            .github
-            README.md
 
       - name: Restart application
         uses: appleboy/ssh-action@v1.0.3
