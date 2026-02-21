@@ -27,7 +27,7 @@ jobs:
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@8.0.4
         with:
-          switches: -avzr --delete --no-times --exclude='.git/' --exclude='node_modules/' --exclude='.env' --exclude='.github/' --exclude='README.md'
+          switches: -avzr --delete --no-times --exclude='.git/' --exclude='.env' --exclude='.github/' --exclude='README.md'
           path: ./
           remote_path: ${{ secrets.STAGE_TARGET_DIR }}
           remote_host: ${{ secrets.STAGE_SERVER_IP }}
