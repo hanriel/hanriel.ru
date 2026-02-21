@@ -45,4 +45,4 @@ jobs:
           script: |
             cd ${{ secrets.TARGET_DIR }}
             npm ci --production
-            pm2 restart hanriel.ru
+            sudo systemctl restart hanriel-ru
