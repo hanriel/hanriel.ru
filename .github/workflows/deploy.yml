@@ -27,7 +27,7 @@ jobs:
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@7.0.1
         with:
-          switches: -avzrO --delete   # флаги rsync: архив, сжатие, рекурсивно, удалять лишнее
+          switches: -avzr --delete   # флаги rsync: архив, сжатие, рекурсивно, удалять лишнее
           path: ./                   # что копируем (текущая папка)
           remote_path: ${{ secrets.STAGE_TARGET_DIR }}
           remote_host: ${{ secrets.STAGE_SERVER_IP }}
