@@ -1,29 +1,36 @@
-# Hanriel - IT-технологии
-[![](https://github.com/hanriel/hanriel.ru/workflows/EditorConfig/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3AEditorConfig)
-[![](https://github.com/hanriel/hanriel.ru/workflows/Markdown/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3AMarkdown)
-[![](https://github.com/hanriel/hanriel.ru/workflows/Stylelint/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3AStylelint)
-[![](https://github.com/hanriel/hanriel.ru/workflows/ESLint/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3AESLint)
-[![](https://github.com/hanriel/hanriel.ru/workflows/Deploy/badge.svg)](https://github.com/hanriel/hariel.ru/actions?query=workflow%3ADeploy)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Дизайн
+## Getting Started
 
-- [Текущий макет в Figma](https://www.figma.com/file/dV7oWbRYHt8W1076LueOOy).
+First, run the development server:
 
-## Разработка
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- Установка зависимостей: `npm install`
-- Старт сервера для локальной разработки: `npm start`
-- Запуск сборки для деплоя: `npm run build`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Окружение и технологии
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Движок [Eleventy](https://www.11ty.io/) собирает Markdown и JSON по шаблонам [Nunjucks](https://mozilla.github.io/nunjucks/) и генерирует статичные HTML-страницы. Стили пишутся на чистом CSS, соединяются импортами, сжимаются и оптимизируются. Браузерная совместимость описана в ключе `browserlist` в [package.json](https://github.com/web-standards-ru/web-standards.ru/blob/master/package.json), если коротко — «без IE11».
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Принципы верстки
+## Learn More
 
-**Mobile-first.** Сначала мы делаем мобильную версию интерфейса, а потом начинаем увеличивать с помощью `@media`. Например, кнопка открытия главного меню спрячется, когда для меню будет достаточно места на экране.
+To learn more about Next.js, take a look at the following resources:
 
-**Нет брекпоинтов для адаптации.** Каждый компонент для себя решает, когда ему адаптироваться. Например, когда пункты меню начинают помещаться — пора развернуть его во всю ширину и спрятать кнопку-гамбургер.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
----
-Работает на [Eleventy](https://www.11ty.io/).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
