@@ -34,6 +34,12 @@ jobs:
           remote_user: ${{ secrets.STAGE_SERVER_USER }}
           remote_key: ${{ secrets.STAGE_SERVER_KEY }}
           remote_port: ${{ secrets.STAGE_SERVER_PORT }}
+          exclude: |                   # исключаем из копирования для ускорения
+            node_modules
+            .git
+            .env
+            .github
+            README.md
 
       - name: Restart application
         uses: appleboy/ssh-action@v1.0.3
@@ -44,5 +50,5 @@ jobs:
           port: ${{ secrets.STAGE_SERVER_PORT }}
           script: |
             cd ${{ secrets.TARGET_DIR }}
-            npm ci --production
+            npm ci --omit=dev
             sudo systemctl restart hanriel-ru
