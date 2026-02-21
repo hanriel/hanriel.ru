@@ -50,5 +50,5 @@ jobs:
           port: ${{ secrets.STAGE_SERVER_PORT }}
           script: |
             cd ${{ secrets.TARGET_DIR }}
-            npm ci --production
+            npm ci --omit=dev
             sudo systemctl restart hanriel-ru
