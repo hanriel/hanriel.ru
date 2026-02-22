@@ -9,9 +9,9 @@ export function Navbar() {
 
         const navLinks = [
         { name: 'Главная', path: '/' },
-        { name: 'Статьи', path: '/' },
+        { name: 'Статьи', path: '/articles' },
         { name: 'ЕГЭ', path: '/ege' },
-        { name: 'Обо мне', path: '/' },
+        { name: 'Обо мне', path: '/about' },
     ];
 
     const ref = React.useRef(null)
@@ -22,7 +22,7 @@ export function Navbar() {
             <nav
                 className={
                     `h-[70px] fixed top-0 left-1/2 -translate-x-1/2 bg-lime-400/80 w-full max-w-7xl flex items-center justify-between px-4
-                    mx-auto flex rounded-b-4xl border-b px-6 backdrop-blur-sm md:rounded-b-6xl
+                    mx-auto flex rounded-b-none border-b px-6 backdrop-blur-sm lg:rounded-b-4xl md:rounded-b-6xl
                     dark:bg-[radial-gradient(35%_128px_at_50%_0%,--theme(--color-foreground/.1),transparent)]
                     md:px-16 lg:px-24 xl:px-8 transition-all duration-500 z-50 py-4 md:py-6`
                 }>
@@ -71,7 +71,7 @@ export function Navbar() {
 
                 {/* Mobile Menu */}
                 <div className={`fixed top-0 left-0 w-full h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-500 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
-                    <button className="absolute top-4 right-4" onClick={() => setIsMenuOpen(false)}>
+                    <button className="absolute top-6 right-6" onClick={() => setIsMenuOpen(false)}>
                         <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                             <line x1="18" y1="6" x2="6" y2="18" />
                             <line x1="6" y1="6" x2="18" y2="18" />
@@ -80,7 +80,7 @@ export function Navbar() {
 
 
                     {navLinks.map((link, i) => (
-                        <Link key={i} href={link.path}>{link.name}</Link>
+                        <Link key={i} href={link.path} onClick={() => setIsMenuOpen(false)}>{link.name}</Link>
                     ))}
 
                     <Button>Вход</Button>

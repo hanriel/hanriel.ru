@@ -85,7 +85,7 @@ export function Footer() {
 	return (
 		<footer
 			className={cn(
-				"relative mx-auto flex w-full max-w-7xl bg-lime-400/80 flex-col items-center justify-center rounded-t-4xl border-t px-6 md:rounded-t-6xl md:px-8",
+				"relative mx-auto flex w-full max-w-7xl bg-lime-400/80 flex-col items-center justify-center rounded-t-4xl border-t px-6 backdrop-blur-sm md:rounded-t-6xl md:px-8",
 				"dark:bg-[radial-gradient(35%_128px_at_50%_0%,--theme(--color-foreground/.1),transparent)]"
 			)}
 		>
@@ -103,7 +103,7 @@ export function Footer() {
 				<div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4 lg:col-span-2 lg:mt-0">
 					{footerLinks.map((section, index) => (
 						
-							<div className="mb-10 md:mb-0">
+							<div key={index} className="mb-10 md:mb-0">
 								<h3 className=" text-white text-xs font-bold">{section.label}</h3>
 								<ul className="mt-4 space-y-2 text-white text-sm">
 									{section.links.map((link) => (
@@ -127,7 +127,7 @@ export function Footer() {
 			<div className="h-px w-full bg-linear-to-r via-border" />
 			<div className="flex w-full items-center justify-center py-4">
 				<p className="text-white text-sm">
-					ver.{packageJSON.version} &copy; {new Date().getFullYear()} Hanriel, Все права защищены
+					ver.{packageJSON.version} &copy; 2022-{new Date().getFullYear()} Hanriel, Все права защищены
 				</p>
 			</div>
 		</footer>
