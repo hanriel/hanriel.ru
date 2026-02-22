@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "hanriel.ru",
+  title: "HANRIEL.RU",
   description: "Мини-блог о технологиях",
 };
 
