@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
 import { Logo } from "@/components/Logo";
 import { FacebookIcon, InstagramIcon, YoutubeIcon, LinkedinIcon } from "lucide-react";
+import packageJSON from "@/package.json"
 
 type FooterLink = {
 	title: string;
@@ -126,7 +127,7 @@ export function Footer() {
 			<div className="h-px w-full bg-linear-to-r via-border" />
 			<div className="flex w-full items-center justify-center py-4">
 				<p className="text-white text-sm">
-					&copy; {new Date().getFullYear()} Hanriel, Все права защищены
+					ver.{packageJSON.version} &copy; {new Date().getFullYear()} Hanriel, Все права защищены
 				</p>
 			</div>
 		</footer>
