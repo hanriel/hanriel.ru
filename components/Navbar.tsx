@@ -1,7 +1,7 @@
 "use client"
 
-import * as React from "react"
-import Link from "next/link"
+import * as React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
 
@@ -19,7 +19,13 @@ export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-            <nav className={`h-[70px] fixed top-0 left-0 bg-lime-400 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 py-4 md:py-6`}>
+            <nav
+                className={
+                    `h-[70px] fixed top-0 left-1/2 -translate-x-1/2 bg-lime-400/80 w-full max-w-7xl flex items-center justify-between px-4
+                    mx-auto flex rounded-b-4xl border-b px-6 backdrop-blur-sm md:rounded-b-6xl
+                    dark:bg-[radial-gradient(35%_128px_at_50%_0%,--theme(--color-foreground/.1),transparent)]
+                    md:px-16 lg:px-24 xl:px-8 transition-all duration-500 z-50 py-4 md:py-6`
+                }>
 
                 {/* Logo */}
                 <a href="https://hanriel.ru" className="flex items-center gap-2">
@@ -39,7 +45,7 @@ export function Navbar() {
                                 <Link
                                     key={i}
                                     href={link.path}
-                                    className={`group flex flex-col gap-0.5 text-white`}>
+                                    className={`group flex flex-col gap-0.5 text-white text-sm font-medium`}>
                                         {link.name}
                                 </Link>
                     ))}
