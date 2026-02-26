@@ -11,6 +11,7 @@ export function Navbar() {
         { name: 'Главная', path: '/' },
         { name: 'Статьи', path: '/articles' },
         { name: 'ЕГЭ', path: '/ege' },
+        { name: 'Портфолио', path: '/portfolio' },
         { name: 'Обо мне', path: '/about' },
     ];
 
@@ -21,8 +22,8 @@ export function Navbar() {
   return (
             <nav
                 className={
-                    `h-[70px] fixed top-0 left-1/2 -translate-x-1/2 bg-lime-400/80 w-full max-w-7xl flex items-center justify-between px-4
-                    mx-auto flex rounded-b-none border-b px-6 backdrop-blur-sm lg:rounded-b-4xl md:rounded-b-6xl
+                    `h-[70px] fixed top-0 left-1/2 -translate-x-1/2 bg-yellow-400/70 w-full max-w-7xl flex items-center justify-between px-4
+                    mx-auto flex rounded-b-none border-b px-6 backdrop-blur-xs lg:rounded-b-4xl md:rounded-b-6xl
                     dark:bg-[radial-gradient(35%_128px_at_50%_0%,--theme(--color-foreground/.1),transparent)]
                     md:px-16 lg:px-24 xl:px-8 transition-all duration-500 z-50 py-4 md:py-6`
                 }>
@@ -45,7 +46,7 @@ export function Navbar() {
                                 <Link
                                     key={i}
                                     href={link.path}
-                                    className={`group flex flex-col gap-0.5 text-white text-sm font-medium`}>
+                                    className={`group flex flex-col gap-0.5 text-sm font-medium`}>
                                         {link.name}
                                 </Link>
                     ))}
@@ -53,7 +54,7 @@ export function Navbar() {
 
                 {/* Desktop Right */}
                 <div className="hidden md:flex items-center gap-4">
-                    <svg className={`h-6 w-6 text-white transition-all duration-500`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <svg className={`h-6 w-6 transition-all duration-500`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                         <circle cx="11" cy="11" r="8" />
                         <line x1="21" y1="21" x2="16.65" y2="16.65" />
                     </svg>

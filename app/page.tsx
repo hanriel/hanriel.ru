@@ -4,20 +4,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-9/10 flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+      <main className="flex min-h-screen w-full max-w-7xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h1 className="text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Упс...сайт пока в режиме глобального обслуживания...
           </h1>
-          <p className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Я чуть чуть переезжаю в контенеры... {" "}
-            <a
-              href="https://github.com/hanriel/hanriel.ru/tree/dev"
-              className="font-medium text-zinc-950 txet-undeline dark:text-zinc-50"
-            >
-              Вот тут
-            </a>{" "} можно за этим следить. А ниже всякие полезные штуки:
-          </p>
           <ul>
               <li><a href="https://pmk.hanriel.ru/">UGS PORTAL</a></li>
               <li><a href="https://vkr.hanriel.ru">VKR Gibadullin</a></li>

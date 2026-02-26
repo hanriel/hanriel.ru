@@ -85,7 +85,7 @@ export function Footer() {
 	return (
 		<footer
 			className={cn(
-				"relative mx-auto flex w-full max-w-7xl bg-lime-400/80 flex-col items-center justify-center rounded-t-4xl border-t px-6 backdrop-blur-sm md:rounded-t-6xl md:px-8",
+				"relative mx-auto flex w-full max-w-7xl bg-yellow-400/70 flex-col items-center justify-center rounded-t-4xl border-t px-6 backdrop-blur-sm md:rounded-t-6xl md:px-8",
 				"dark:bg-[radial-gradient(35%_128px_at_50%_0%,--theme(--color-foreground/.1),transparent)]"
 			)}
 		>
@@ -94,7 +94,7 @@ export function Footer() {
 			<div className="grid w-full gap-8 py-6 md:py-8 lg:grid-cols-3 lg:gap-8">
                 <div>
                     <Logo className="h-8" />
-                    <p className="mt-8 text-white text-sm md:mt-0">
+                    <p className="mt-8 text-sm md:mt-0">
                         Блог о мире техлогий
                     </p>
                 </div>
@@ -104,8 +104,8 @@ export function Footer() {
 					{footerLinks.map((section, index) => (
 						
 							<div key={index} className="mb-10 md:mb-0">
-								<h3 className=" text-white text-xs font-bold">{section.label}</h3>
-								<ul className="mt-4 space-y-2 text-white text-sm">
+								<h3 className="text-xs font-bold">{section.label}</h3>
+								<ul className="mt-4 space-y-2 text-sm">
 									{section.links.map((link) => (
 										<li key={link.title}>
 											<a
@@ -124,9 +124,9 @@ export function Footer() {
 					))}
 				</div>
 			</div>
-			<div className="h-px w-full bg-linear-to-r via-border" />
+			<div className="h-px w-full bg-linear-to-r via-black " />
 			<div className="flex w-full items-center justify-center py-4">
-				<p className="text-white text-sm">
+				<p className="text-sm">
 					ver.{packageJSON.version} &copy; 2022-{new Date().getFullYear()} Hanriel, Все права защищены
 				</p>
 			</div>
