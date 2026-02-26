@@ -3,7 +3,8 @@ import Image from "next/image";
 
 export default function Ege() {
   return (
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <main className="flex min-h-screen w-full max-w-7xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <h1 className="croll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">ЕГЭ</h1>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin purus in arcu dignissim vehicula. Vestibulum porta elit eget urna fringilla, ac accumsan lacus pulvinar. Sed rhoncus sapien fringilla, lacinia turpis vel, auctor sapien. Vestibulum ullamcorper sed tellus malesuada auctor. Duis sed mauris purus. Nam egestas nibh purus, ut facilisis tellus facilisis at. Nam imperdiet elit a libero semper lacinia ut vel enim. Sed eu arcu venenatis, finibus justo rutrum, lobortis libero. Mauris congue arcu sit amet aliquam vulputate.
 
@@ -15,5 +16,6 @@ Nulla et tortor urna. Fusce fermentum mi ac malesuada vehicula. Nullam cursus le
 
 Maecenas massa turpis, pretium sed nisi sit amet, bibendum molestie dolor. Proin sodales elit velit, eget ultrices justo suscipit in. Praesent tincidunt neque nec libero malesuada eleifend. Mauris aliquet quis nibh a eleifend. Praesent auctor elit id nulla facilisis, sit amet pulvinar massa hendrerit. Nulla gravida cursus purus, sit amet feugiat turpis hendrerit sed. Etiam tincidunt venenatis est, in tempus lectus porttitor at. Phasellus in nibh quis sem tincidunt ornare vitae vel dui. Cras consectetur est eget arcu rhoncus maximus. Aliquam porta sollicitudin lectus in blandit. Fusce orci arcu, tristique sit amet convallis quis, luctus sit amet felis. Nullam urna lorem, congue a purus vel, semper consectetur sapien.</span>
       </main>
+    </div>
   );
 }
