@@ -22,7 +22,7 @@ export function Navbar() {
   return (
             <nav
                 className={
-                    `h-[70px] fixed top-0 left-1/2 -translate-x-1/2 bg-yellow-400/70 w-full max-w-7xl flex items-center justify-between px-4
+                    `h-[70px] fixed top-0 left-1/2 -translate-x-1/2 bg-yellow-400/70 w-full max-w-7xl items-center justify-between
                     mx-auto flex rounded-b-none border-b px-6 backdrop-blur-xs lg:rounded-b-4xl md:rounded-b-6xl
                     dark:bg-[radial-gradient(35%_128px_at_50%_0%,--theme(--color-foreground/.1),transparent)]
                     md:px-16 lg:px-24 xl:px-8 transition-all duration-500 z-50 py-4 md:py-6`
