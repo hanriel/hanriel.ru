@@ -15,7 +15,7 @@ export default function Home() {
           height={"740px"}></iframe>
         <iframe
           width={"100%"}
-          height={"740px"} src="https://cloud.pmkspo.ru/index.php/apps/calendar/embed/dRYDfQYB9rgMAQHj"></iframe>
+          height={"740px"} src="https://cloud.pmkspo.ru/index.php/apps/calendar/embed/dRYDfQYB9rgMAQHj-mW5WCwtbJySNtLeg-"></iframe>
       </main>
   );
 }
