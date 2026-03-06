@@ -12,7 +12,7 @@ export default function Home() {
         </div>
         <iframe
           width={"100%"}
-          height={"740px"} src="https://cloud.pmkspo.ru/index.php/apps/calendar/embed/dRYDfQYB9rgMAQHj-mW5WCwtbJySNtLeg-"></iframe>
+          height={"740px"} src="https://cloud.pmkspo.ru/index.php/apps/calendar/embed/dRYDfQYB9rgMAQHj-mW5WCwtbJySNtLeg/timeGridWeek"></iframe>
       </main>
   );
 }
