@@ -1,9 +1,8 @@
-import { Navbar } from "@/components/Navbar";
 import Image from "next/image";
 
-export default function Ege() {
+export default function About() {
   return (
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+      <main className="flex min-h-screen w-full max-w-7xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
          <Image
             className="object-cover w-full h-full transition-transform duration-300 ease-in-out"
             src="/me.jpg"
