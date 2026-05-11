@@ -1,9 +1,18 @@
+import Image from "next/image";
+import Link from "next/link";
+
 function Card({ date, text, descr } : {date: string, text: string, descr: string}) {
     return (
         <>
-          <article className="flex rounded-lg h-auto max-h-64 aspect-square overflow-hidden relative border border-transparent hover:border-blue-100 hover:bg-blue-500/10 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <article className="flex rounded-lg h-auto max-h-64 aspect-square overflow-hidden relative border border-transparent cursor-pointer hover:border-blue-100 hover:bg-blue-500/10 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
 
-            <img className="w-full h-full absolute brightness-50 z-0" src="cat.jpg"></img>
+            <Image
+              className="w-full h-full absolute brightness-50 z-0" 
+              width={100}
+              height={100}
+              src='/cat.jpg'
+              alt='card image'
+            />
             <div className="grid m-4 relative z-10 ">
               <span className="text-xs text-white">{date}</span>
               <div className="flex flex-wrap gap-2 mt-auto">
@@ -17,3 +26,21 @@ function Card({ date, text, descr } : {date: string, text: string, descr: string
 }
 
 export default Card
+
+interface CardWrapperProps {
+  href?: string;
+  children: React.ReactNode;
+}
+
+export const CardWrapper = ({ href, children }: CardWrapperProps) => {
+  // Если ссылка передана, оборачиваем в Link
+  if (href) {
+    return (
+      <Link href={href} target="_blank" rel="noopener noreferrer" className="block">
+        {children}
+      </Link>
+    );
+  }
+
+  return <>{children}</>;
+};
