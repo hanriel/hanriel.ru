@@ -5,7 +5,7 @@ export default function Home() {
         </div>
         <iframe
           width={"100%"}
-          height={"740px"} src="https://cloud.pmkspo.ru/index.php/apps/calendar/embed/dRYDfQYB9rgMAQHj-mW5WCwtbJySNtLeg/timeGridWeek/now"></iframe>
+          height={"740px"} src="https://cloud.pmkspo.ru/index.php/apps/calendar/embed/dRYDfQYB9rgMAQHj-mW5WCwtbJySNtLeg-kZyL2AtfxB5M827A/timeGridWeek/now"></iframe>
       </main>
   );
 }
